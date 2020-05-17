@@ -1,262 +1,479 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>계속되는 꿈, 자도자도 피곤해!</title>
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,400,900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>초보자를 위한 나만의 가죽공예 DIY KIT</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+
 	<style type="text/css">
-		body,h1,h2,img,p,ol,ul,li{margin:0;}
-		img{display:inline-block;width:100%;}
-		header,footer{width:700px;margin:auto;}
-		header {height:500px;margin-top: 200px;margin-bottom: 50px; }
-		h1{text-align: center;padding-top:55px;font-size: 3.3em;margin-top: 100px;}
-		h2{margin-bottom: 20px;font-size: 2.7em;}
+		html{font-family: 'Noto Sans KR', sans-serif;box-sizing: border-box;scroll-behavior: smooth;}
+		body,h1,h2,p,div,ul,li{margin:0;padding:0;}
+		img{display:inline-block;}
+		a{text-decoration: none;color: black;}
+		h1{font-weight:900;word-spacing: 5px;font-size: 2.3em;letter-spacing: 0px;padding-top: 120px;}
+		h2{font-weight:500;font-size: 1.3em;line-height: 40px;margin-bottom: 10px;margin-top: 15px;}
+		header{background:url('header.jpg');background-attachment:fixed;background-size:cover;height: 450px;}
+		header p{font-weight:500;width: 500px;margin:auto;padding-top: 18px;font-size: 1.2em;letter-spacing: 0px;}
+		header .abs{position: absolute;height: 450px;background: black;width: 100%;opacity: 0.3;z-index: 1;}
+		p{font-weight:300;font-size: 1.1em;margin-top: 20px;word-break: keep-all;line-height: 36px;}
+		nav{margin:50px 0px;position: sticky;top:0;background:white;z-index: 20;}
+		nav ul{margin:50px 0px;}
+		nav ul li{list-style-type: none;width: 30%;height: 35px;}
+		nav ul li a{display: block:line-height:35px;text-align: center;}
+		nav ul li a:hover{background:orange;background-height: 35px;transition: all 0.5s;}
+		footer{padding-top: 40px;}
 
-		.row{width:700px;margin:auto;margin-bottom: 50px;}
-		section{background:black;margin-top: 350px;margin-bottom: 100px;}
-		section p {margin-bottom: 15px;margin-top: 15px; line-height:1.8;word-break: keep-all;font-size: 1.2em;}
-		.e{margin-bottom: 20px;margin-top: 10px; line-height:1.8;word-break: keep-all;color: white;}
-		footer{height: 500px;margin-top: 300px;}
-		footer p {text-align: center;line-height:1.8;}
-
-		.a{margin-top: 20px;margin-bottom: 20px;font-size: 1.3em;line-height:1.5;text-align: center;
-			font-family: 'Noto Serif KR', serif;color: gray;}
-		.b{width: 330px;display:inline-block;margin-top: -10px;}
-		.c{width: 330px;display:inline-block;padding-left: 20px;margin-top: -10px;}
-		.d{margin-top: 20px;margin-bottom: 20px;font-size: 1.3em;line-height:1.5;text-align: center;
-			font-family: 'Noto Serif KR', serif;color:white;}
-		.bg-none{background: none;}
-		.bg-img{background:url('background.jpg');
+		.bg-white{background: white;margin-top: 100px;margin-bottom: 100px;}
+		.bg-white1{background: white;margin-top: 800px;}
+		.bgfixed{background-attachment: fixed;}
+		.bg-img1{background: url('main1.jpg');
+				background-size:cover;
+				height: 900px;padding: 50px;margin-top: 200px;}
+		.bg-img2{background: url('main2.jpg');
+				background-size:cover;
+				height: 900px;padding: 50px;}
+		.bg-img3{background: url('img2.jpg');
 				background-size:cover;
 				background-attachment:fixed;
-				height: 900px;padding: 50px;margin-top: 500px;
-				margin-bottom: 200px;}
-		.bg-img2{background:url('background2.jpg');
+				height: 400px;padding: 50px;margin-top: 200px;}
+		.bg-img4{background: url('m1.jpg');
 				background-size:cover;
-				background-attachment:fixed;
-				height: 900px;padding: 50px;
-				margin-bottom: 200px;}
-				
-
-		.bg-black{background:black;margin-top: 600px;padding :100px;margin-bottom: 150px;}
-		.text-white{color: white;}
-		.margin{margin-top: : 100px;}
-		.marjin-bottom{margin-bottom: 50px;}
-		.text-align-center{text-align: center;}
-		.text-align-left{text-align: left;}
-		.size{font-size: 1.6em;margin-top: 20px;}
-		.font-size{font-size:0.8em;}
-		.size{width: 400px;margin-bottom: 10px;padding-left: 170px;}
-		.tap{width: 800px;font-size: 1.5em;}
-
-		strong{}
-		mark{}
-		em{font-style:normal;border-bottom:2px solid black;}
-		nav{width: 200px;;background: yellow;margin-bottom: -200px;}
-		.logo{margin-left:53px;margin-bottom :10px;float: left;font-size: 1.5em;color:black;text-decoration-line:none;font-weight:bold;}
-		nav ul{width:150px;float: left;}
-		nav ul li{padding-top:2px;list-style-type: none;width: 300px;}
-		nav ul li a{display:block;background: white;width:100px;height:30px;text-align:center;line-height:30px;text-decoration-line: none;font-weight:bold;color:black;}
-
-		a:hover{transition: all 0.5s;background: black;}
+				height: 800px;padding: 150px;margin-top: 23px;}
+		.bg-img5{background: url('final.jpg');
+				background-size:cover;
+				height: 800px;padding: 50px;margin-bottom: 200px;}
+		.bg-none{background: none;padding: 3px;}
+		.bg-none1{background: none;padding: 3px;}
+		.h-400{width:500px;height:400px;padding: 0px;margin-top:150px;}
+		.h-500{width:400px;height:500px;margin-bottom: 200px;margin-left: 70px;margin-top: 100px;padding: 0px;}
+		.h-550{width:400px;height:500px;margin-bottom: 300px;margin-left:-70px;margin-top: 400px;padding: 0px;}
+		.h-600{height: 600px;}
+		.h-500-1{height: 460px;}
+		.h-700{height: 660px;}
+		.h-800{height: 834px;}
+		.row{width:1000px;margin:auto;}
+		.row div{padding: 0px;}
+		.flexbox{display: flex;}
+		.col-1{width: 16.66%;}
+		.col-2{width: 33.33%;}
+		.col-3{width: 50%;}
+		.col-4{width: 66.66%;}
+		.col-5{width: 83.32%;}
+		.col-6{width: 100%;}
+		.text-white{color:white;}
+		.text-center{text-align: center;}
+		.text-size1{font-size: 1.5em;margin-top: 7px;margin-bottom: 30px;}
+		.text-size2{font-weight:300;font-size:1em;line-height:40px;}
+		.text-size3{font-weight:300;font-size:1.3em;line-height:40px;}
+		.text-size4{font-weight:500;font-size:1.1em;line-height:40px;text-align: left;height: 400px;margin-left: 230px;}
+		.text{font-weight:300;font-size:1em;line-height:45px;}}
+		.margin-top{margin-top: 300px;padding: 30px;}
+		.top{margin-top: 300px;}
+		.margin{margin-top: 200px;margin-bottom: 200px;}
+		.margin-bottom{margin-top: 300px;margin-bottom:200px;padding: 30px;}
+		.bottom{margin-bottom: 200px;margin-left: 300px;margin-top:0px;}
+		.margin-left{margin-left: 510px;margin-top: 0px;}
+		.margin-left1{margin-left: 10px;}
+		.left{text-align: left;line-height: 2.2em;margin-left:140px;}
+		.right{text-align:right;line-height: 2.2em;margin-top: 630px;margin-left:140px;}
+		.img{width:800px;height: 700px;
+			margin-left:220px;margin-right:200px;padding: 0;}
+		.section{margin-top:200px;margin-bottom: 200px;height: 1000px;}
+		.section1{margin-top:200px;margin-bottom: 200px;height: 700px;}
+		.ex{margin:auto;margin-top: 0px;}
+		.ex1{margin-left:0px;margin-top: 200px;padding: 0px;}
+		.b1{display:inline-block;width: 700px;margin-left: 300px;}
+		.b2{display:inline-block;height:50px;width: 400px;text-align: center; border: 1px solid black;line-height: 50px;margin-top: 20px;}
+		.b2:hover{background:orange;background-height: 50px;transition: all 0.5s;}
+		.p2{font-weight:300;font-size: 1.1em;margin-top: 50px;word-break: keep-all;line-height: 36px;}
+		.r{position: relative;left: 20px;top: 20px;width: 1000px;}
+		#abs1{position: absolute;left: 20px;color: white;font-weight: 500;}
+		#abs2{position: absolute;}
+		#abs3{position: absolute;left: 20px;top:10px;color: white;font-weight: 500;}
+		#abs4{position: absolute;left: 500px;}
+		#abs5{position: absolute;left:400px;}
 		
+		strong{}
+		em{font-style: normal;border-bottom: 1.5px solid black;}
+		mark{}
 	</style>
-
 </head>
 <body>
+	<script> console.log(66.66 + 16.66)</script>
 	<header>
-		<div class="row" text-align-center>
-			<h1>계속되는 꿈, 자도자도 피곤해!😭</h1>
-			<p class="text-align-center size">
-				<em>무한의 공간, 꿈의 세계로🧚</p></em>
-		</div>
-
-		</header>
-
-	<nav>
-	<div class="logo">
-			<a href="index.html"> ABOUT DREAM</a></div>
-
-		<ul>
-		<li>
-			<a href="#a" target="_self">Intro</a>
-		</li>
-		<li>
-			<a href="#b" target="_self">정의</a>
-		</li>
-		<li>
-			<a href="#c" target="_self">과정</a>
-		</li>
-		<li>
-			<a href="#d" target="_self">악몽</a>
-		</li>
-		<li>
-			<a href="#e" target="_self">데자뷰</a>
-		</li>
-		<li>
-			<a href="#f" target="_self">꿈 조작</a>
-		</li>
-		<li>
-			<a href="#g" target="_self">자각몽</a>
-		</li>
-		<li>
-			<a href="#h" target="_self">자각몽 영향</a>
-		</li>
-		<li>
-		<a href="#i" target="_self">숙면 방법</a>
-		</li>
-	</ul>
-</nav>
+		<div class="abs"></div>
+		<div class="row text-center">
+			<div class="col-6">
+				<h1>초보자를 위한 나만의 가죽공예 DIY KIT</h1>
+				<p>가죽 키홀더 만들기</p>
+			</div>
+		</div> 
+	</header>
 	
 
-
-	<section class="bg-none" id="a">
-		<div class="row">
-			<h2>도대체 꿈이 뭐길래!</h2>
+	<section>
+		<div class="row flexbox">
+			<div class="col-3 h-400">
+			<img src="image1.jpg">	
+		</div>
+		<div class="col-3 h-400">
+			<h2 class="text-size1">가죽키링 DIY KIT SET</h2>
+				<p class="text-size1">
+				24,900원 <br>
+				</p>
+				<p>
+				<strong>추가혜택</strong> 현대카드 23,520원 (2% 청구 할인)<br>
+				<strong>적립금</strong>	240p<br>
+				<strong>할부금</strong>	월 4000원(6개월 할부시)<br>
+				<strong>무이자</strong>	카드보기<br>
+				<strong>배송방법</strong>	택배
+			<div class="b2">
+				구매하기
+			</div>
 			
-			<p class="tap">
-			방학을 하면 꼭 하루종일 잠을 자야지 마음먹었고, 코로나 사태로 집에 있는 시간이 길어졌다. 평소에 잠이 많아 눈만 감으면 잠을 잤는데, 이상하게 몸이 개운한 날도, 오히려 힘든 날도 있었다. 기분 좋은 꿈도 있었고, 시험을 본다거나 좀비에게 도망치는 무서운 꿈은 잠이라는 행위가 무의미하게 느껴지게 한다. <strong>도대체 꿈이란 무엇일까?</p></strong>
-			<img class="size" src="img1.gif">
+				</p>
+		</div>
+	</section>
+
+	<nav>
+		<div class="row">
+			<ul class="col-6 flexbox text-center">
+				<li><a href="#a" target="_self">소개</a></li>
+				<li><a href="#b" target="_self">매듭 짓는 법</a></li>
+				<li><a href="#c" target="_self">바느질하는 법</a></li>
+				<li><a href="#d" target="_self">만드는 과정</a></li>
+				<li><a href="#e" target="_self">정보</a></li>
+			</ul>
+	</nav>
+	<section>
+		<div class="row">
+			<div class="col-6 ">
+			<img src="f0.jpg">
+		</div>
+	</div>
+	</section>
+
+
+	<section class="bg-img1" id="a">
+		<div class="row left">
+			<div class="col-6 ">
+				<p>가죽공예 어렵다?</p>
+				<h2><strong>초보자를 위한<br> 나만의 <br>
+					가죽공예 DIY KIT</h2></strong>
+				<p>가죽 키홀더 만들기.</p>
+			</div>
+	</section> 
+	<section class="bg-img2">
+		<div class="row left text">
+			<div class="col-6">
+				<p>무료한 일상 속<br>
+				나의 작은 '소확행'을 위해 제작한<br>
+				가죽공예 DIY KIT입니다.</p>
+		<div class="row right">
+			<div class="col-6">
+				<p>가죽공예를 처음 접하는,<br>
+					저렴한 가격대로 손쉽게,<br>
+					가죽공예에 입문하고 싶은, <br>
+					초보자를 위해 구성했습니다.</p>
+
+			</div>
+	</section>
+
+	<section class="margin">
+		<div class="row flexbox">
+			<div class="col-3 h-550">
+				<img src="thumbnail1.jpg">
+			</div>
+
+			<div class="col-3 h-500">
+				<img src="thumbnail2.jpg">
+			</div>
+	</section>
+
+
+	<section>
+		<div class="text-center">
+				<p class="text-size3">
+				초보자를 위해 구성되어<br>
+				누구나 쉽게 제작할 수 있습니다.<br>
+				기본적인 목타 구멍까지 되어 있으며<br>
+				가죽공예 새들 스티치와 단면 마감 조립만 하시면<br> 
+				완성하실 수 있습니다.</p>	
+			</div>
+	</section>
+
+	<section class="section">
+		<div class="img">
+			<img src="fullshot.jpg">
+			<h2>DIY KIT 구성품</h2>
+		<div class="b1">
+			<p>재단된 가죽(바느질 구멍 작업까지 완료된 상태),
+				실과 바늘, 토코놀(천연 단면 마감제), 솔트레지,
+				마감 장식, 사포, 이쑤시개, 안경드라이버, 설명서
+				<br>
+				<br>
+				<strong>
+				+ 이니셜 각인으로 나만의 작품으로 만들어 보세요.
+				(추가 구매 필요)
+				</strong>
+			</p>
+		</div>	
+	</section>
+
+	<section class="bg-img3">
+		<div class="row">
+			<div class="left">
+				<p>이 가죽공예에서 중요한<br>
+				<strong>[새들 스티치]</strong>를 이해하는 것이 가장 중요합니다.<br>
+				<br>
+				<br>
+				초보자분들은 아래 설명을<br>
+				잘 읽고 차근차근 <br>
+				따라와주세요.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section1">
+		<div class="text-center">
+			<h2><em>새들 스티치란?</em></h2>
+			<img src="img3.jpg">
+				<p>든든한 안장 및 마구용 가죽제품과 H사 명품에 오랜시간 사용되고 있는 전통 수공 바느질입니다.<br>
+				<mark>왁스를 입힌 실 양쪽 끝에 바늘을 꿰어 두 개의 바늘을 반복적으로 교차하는 바느질 방식</mark>으로<br> 한땀이 끊어지더라고 
+				더이상 풀리지 않고 미싱 바느질과는 <strong>차원이 다른 견고함</strong>을 자랑합니다.<br>
+				</p>
+			</div>
 		</div>
 	</section>
 
 	<section class="bg-none" id="b">
-		<div class="row">
-			<h2>꿈을 정의하자면</h2>
-			<img src="img2.jpg">
-			<div class="a">자는 순간에도 끊임없이 움직이는 나, 이거 꿈 맞지?<br></div>
+		<h2 class="text-center"> 매듭 짓는 법</h2>
+		<div class="row flexbox">	
+			<div class="col-3">
+				<img src="img4.jpg">
+			</div>
+			<div class="col-3">
+				<img src="img5.jpg">	
+			</div>
+		</div>
+	</section>
 
-			<p class="marjin-bottom">꿈은 ‘수면 시 경험하는 일련의 영상, 소리, 생각, 감정 등의 느낌’을 말한다.<br><strong>일반적으로 수면 단계 중에서도 두뇌 활동이 가장 활발한 기간을 ‘렘(Rapid Eye Movement, REM)수면’이라고 한다.이를 흔히 얕은 잠이라고 하며, 이 상태에서 꿈을 꾼다.</strong>
-			<br>
-			</p>
+	<section class="bg-none">
+		<div class="row flexbox">
+			<div class="col-3">
+				<img src="img6.jpg">		
+			</div>
+			<div class="col-3">
+				<img src="img7.jpg">
+			</div>
+	</div>
+	</section>
 
-			<iframe width="500" height="300" margin="50px" src="https://www.youtube.com/embed/iWo90uxkNM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  			</video>
-  			<p><수면 과정에 대한 동영상></p>
+	<section class="section">
+		<div class="text-center">
+			<img src="gif.gif">
 		</div>
 	</section>
 
 	<section class="bg-none" id="c">
-		<div class="row">
-			<h2>꿈을 왜 꾸는가?</h2>
-			<div class="b">
-			<img src="img3.jpg"></div>
-			<div class="c">
-			<p><mark>우리의 몸은 잠을 자고 있지만 뇌의 일부가 깨어있는 상태에서 기억이나 정보를 무작위로 자동 재생되는 것이 꿈이다.</mark>
-			<br>우리 뇌에는 해마라고 불리는 부위가 단기기억을 장기기억으로 만드는 역할을 하는데, 이 활동은 잠을 잘 때 이루어진다. 이때 나의 기억들은 영상으로 옮겨지는데 이것을 꿈이라 한다.
-			</p></div>
+		<h2 class="text-center"> 바느질 하는 법 </h2>
+		<div class="row h-600">
+			<div class="col-6 r">
+				<img src="ba1.jpg" id="abs2">
+				<p id="abs1">1. 첫번째 구멍에 바늘을 통과시켜주세요.</p>
+			</div>
 		</div>
+	</section> 
+
+	<section class="bg-none">
+		<div class="row h-600">
+			<div class="col-6 r">
+				<img src="ba2.jpg" id="abs2">
+				<p id="abs1">2. 두 개의 바늘을 동일한 길이로 맞춰주세요.</p>
+			</div>
+		</div>	
+	</section>
+
+	<section class="bg-none">
+		<div class="row h-600">
+			<div class="col-6 r">
+				<img src="ba3.jpg" id="abs2">
+				<p id="abs1">3. 앞면에 통과시키지 않은 바늘을 두번째 구멍에 넣어주세요.</p>
+			</div>
+		</div>	
+	</section>
+
+	<section class="bg-none">
+		<div class="row h-600">
+			<div class="col-6 r">
+				<img src="ba4.jpg" id="abs2">
+				<p id="abs1">그럼 이런 식의 스티치 모양이 나옵니다.</p>
+			</div>
+		</div>	
+	</section>
+
+	<section class="bg-none">
+		<div class="row h-600">
+			<div class="col-6 r">
+				<img src="ba5.jpg" id="abs2">
+				<p id="abs1">4. 뒤집어서 첫번째 구멍을 통과한 바늘을 두번째 구멍에 넣어주세요.</p>
+			</div>
+		</div>	
 	</section>
 		
-	<section class="bg-black" id="d">
-		<div class="row">
-			<h2 class="text-white text-align-center">
-			악몽이 더 기억에 오래남는다?</h2>
-			<img src="img4.jpg">
-				<div class="d">
-				왠지모르게, 긴 꿈을 꾸었다고 일어난 날 아침.<br>
-				좋은 꿈보다는 나쁜 꿈들이 더 생생하게 느껴졌다. 
-				왜 그럴까?<br></div>
-			<div class="e">
-			<p><strong>이유는 잠이 들면 뇌에서 감각을 느끼거나 몸을 움직이는 역할을 하는 ‘신피질’과 기억을 저장하는 ‘해마’ 사이의 연결이 약해진다.</strong> 꿈을 꾸면 두 영역이 각자 활성화되지만, 둘 사이의 의사 소통이 거의 이뤄지지 않기 때문에 꿈을 꾼 것이 기억으로 거의 저장되지 않는다는 가설이 있다.하지만 두 영역 사이의 연결이 완전히 끊어진 것은 아니라서 '매우 강한 자극', '감정과 관련된 기억'이 활성화되는 경우 그 부분에 대해서는 기억이 남게 된다. 악몽의 경우 자극이 강렬하고 내용이 기괴한 경우가 많다. <mark>즉, 평범한 내용의 꿈을 꿀 때보다 악몽을 꿀 때 신피질에서 해마로 보내지는 신호가 강하기 때문에 더 생생하게 기억에 남게 된다고 볼 수 있다.</mark>
-			</p></div>
+	<section class="bg-none">
+		<div class="row h-600">
+			<div class="col-6 r">
+				<img src="ba6.jpg" id="abs2">
+				<p id="abs1">5.같은 방법으로 반복해주고, 중간중간 당겨줍니다.</p>
+			</div>
+		</div>	
+	</section>
+		
+	<section class="bg-none">
+		<div class="row h-600">
+			<div class="col-6 r">
+				<img src="ba7.jpg" id="abs2">
+				<p id="abs1">양쪽 다 마무리하면 본체 완성! 실 끝 부분은 라이터로 지져 마감해주세요.</p>
+			</div>
+		</div>	
+	</section>
+		
+	<section class="bg-none margin-left" id="d">
+		<h2 class="text-center"> 만드는 과정 </h2>
+		<div class="row h-500-1">
+			<div class="col-6 r">
+				<img src="ba8.jpg" id="abs2">
+				<p id="abs1">6.단면에 사포질을 해주세요.</p>
+			</div>
+		</div>	
+	</section>
+
+	<section class="bg-none margin-left">
+		<div class="row h-500-1">
+			<div class="col-6 r">
+				<img src="ba9.jpg" id="abs2">
+				<p id="abs1">7. 동봉된 스틱에 토코놀을 묻혀 단면에 간격을 주어 톡톡 올려주세요.</p>
+			</div>
+		</div>	
+	</section>
+
+	<section class="bg-none margin-left">
+		<div class="row h-500-1">
+			<div class="col-6 r">
+				<img src="ba10.jpg" id="abs2">
+				<p id="abs1">8. 마감천을 이용하여 단면을 빠르게 문질러 광을 내주세요.</p>
+			</div>
+		</div>	
+	</section>
+
+	<section class="bg-none margin-left">
+		<div class="row h-500-1">
+			<div class="col-6 r">
+				<img src="ba11.jpg" id="abs2">
+				<p id="abs1">9. 두면의 접착 부분에 양면 테이프를 제거하고 붙여주세요.</p>
+			</div>
+		</div>	
+	</section>
+
+	<section class="bg-none margin-left">
+		<div class="row h-500-1">
+			<div class="col-6 r">
+				<img src="ba12.jpg" id="abs2">
+				<p id="abs1">10. 머리 장식을 가죽에 끼워줍니다.</p>
+			</div>
+		</div>	
+	</section>
+		
+	<section class="bg-img4">
+	</section>
+
+	<section class="bg-none1 top">
+		<div class="row flexbox">	
+			<div class="col-3">
+				<img src="m2.jpg">
+			</div>
+			<div class="col-3 margin-left1">
+				<img src="m3.jpg">	
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-none1">
+		<div class="row flexbox">	
+			<div class="col-3">
+				<img src="m4.jpg">
+			</div>
+			<div class="col-3 margin-left1">
+				<img src="m5.jpg">	
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<p class="text-size4">1. 머리 장식을 끼운 후, 드라이버로 구멍에 나사를 조여주세요.<br>
+			2. 스마트걸이 가죽을 링에 걸어주세요.<br>
+			3. 솔트레지(방울장식)을 넣어주고<br>
+			4. 가죽을 솔트레지 둥근 부분에 걸어주세요.<br>
+		</P>
+	</section>
+
+	<section class="bg-img5">
+	</section>
+
+	<section class="bg-none">
+		<div class="row flexbox">
+			<div class="col-1 h-800">
+				<img src="mup1.jpg">
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-none">
+		<div class="row flexbox">
+			<div class="col-1 h-800">
+				<img src="mup2.jpg" id="abs4">
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-none">
+		<div class="row flexbox">
+			<div class="col-6 h-700">
+				<img src="mup3.jpg" id="abs5">
+			</div>
+		</div>
+	</section>
+	<section class="bg-none">
+		<div class="row flexbox">
+			<div class="col-6 h-700">
+				<img src="mup4.jpg">
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-none margin-bottom">
+		<div class="row flexbox">
+			<div class="col-6 h-800">
+				<img src="mup5.jpg">
+			</div>
 		</div>
 	</section>
 
 	<section class="bg-none" id="e">
-		<div class="row">
-			<h2>‘잠깐, 이거 꿈에서 본 거 같아’, <em>데자뷰</em> </h2>
-			<img src="img5.jpg">
-			<div class="a">
-			밥을 먹다가 이거 꿈에서 미리 경험해본 것 같던 상황.<br>기분이 이상하고 현실과 꿈의 차이가 불분명해지는 느낌이다.<br>꿈인지, 아니면 속설대로 정말 내 영혼이 미리 보고 온건가...?<br></div>
-			<p>
-			이러한 현상을 데자뷰라고 하는데,<br> 
-			
-			1.<mark><strong>무의식에 의한 행동이나 망각된 기억이 뇌에 저장되어 있다가 그것이 유사한 경험을 만났을 때, 되살아나는 것으로 보는 것이다.</mark></strong> 사람의 뇌는 엄청난 기억력을 가지고 있어서 스치듯이 한번 본 것도 잊어버리지 않고 차곡차곡 뇌세포 속에 저장하는데, 이런 세포 속의 정보들을 모두 꺼내는 것은 아니고 자주 보고 접하는 것들만 꺼내본다고 한다. 하지만 뇌는 훨씬 많은 것을 기억하고 있기 때문에 우리가 무의식중에 했던 일을 다시 하거나 방문했던 곳에 갔을 때, 처음 하는 일 같은데 아련히 똑같은 일을 한 것처럼 느끼는 것이다.
-			<br>
-			<br>
-			2. 에밀 부아라크(Emile Boirac, 1851∼1917)이 '데자뷰'란 단어를 처음 사용하였다. 또한 그는, <mark><strong>데자뷰 현상은 과거의 망각한 경험이나 무의식에서 비롯한 기억의 재현이 아닌, 그 자체로서 이상하다고 느끼는 뇌의 신경화학적 요인에 의한 것이라고 규정하였다.</mark></strong>
-			</p>
+		<div class="row flexbox">
+			<div class="col-6 h-600">
+				<img src="f1.jpg">
+				<img src="f2.jpg">
+			</div>
 		</div>
 	</section>
 
-	<section class="bg-img" id="f">
-		<div class="row">
-			<h2 class="text-white text-align-center">영화 속 꿈 조작, 그게 가능해?</h2>
-		<div class="d">
-			꿈 속에 내가 꿈을 꾼다는 것을 인지하는 것, 이 느낌 뭐지?
-			<br>
-		</div>
-		<div class="e text-align-center">
-			<p><strong>
-			꿈을 소재로 다룬 영화 ‘인셉션’에서처럼 훈련을 통해서 얼마든지 꿀 수 있다. 자각몽을 통해 꿈에서 벌어지는 일들의 순서를 마음대로 조절할 수 있으며, 각성상태처럼 몸을 움직이거나 외부의 자극에 대해 반응을 보일 순 없지만 꿈 속에서 원하는 행동을 하거나 말을 할 수 있다.</strong></p></div>
-		</div>
-
-	</section>
-
-	<section class="bg-none" id="g">
-		<div class="row">
-			<h2>자각몽</h2>
-			<img src="img7.gif">
-			<p>여기에서 자각몽이란,
-			자각몽(自覺夢) 또는 루시드 드림(영어: lucid dream)
-			꿈을 꾸는 도중에 스스로 꿈이라는 사실을 알고 꾸는 꿈을 말한다.<br>
-			<em>자각몽이 진행 중일 때, 뇌의 의식은 꿈의 내용에 의식적으로 개입하거나 그 내용을 조정하는 일이 가능해지므로, 여러 가지 물리적으로 불가능한 현상이나 욕구 등을 의지에 따라 시각화하는 일이 가능해질 수 있다고 한다.</em></p>
-		</div>
-	</section>
-
-	<section class="bg-none" id="h">
-		<div class="row">
-			<h2>자각몽을 꾸면 좋을까?</h2>
-			<img src="img8.jpg">
-			<p>
-			정신과에서는 일부 외상후 스트레스 증후군이나 악몽 환자에게 제한적으로 사용하는 치료법으로 쓰이기도 한다. 부작용이 발생할 우려로는 자각몽에 몰입한 나머지 꿈과 현실을 구분하지 못하거나, 자각몽 속에서 지나친 일탈 행위를 하다가 정서 불안에 빠질 위험성이 크다는 것이다.</p>
-		</div>
-	</section>
-
-	<section class="bg-none" id="i">
-		<div class="row">
-			<h2>잠을 푹 자는 방법은 없을까?</h2>
-			<img src="img9.gif">
-			<div class="a">
-			잠은 보약이라던데...자도자도 꿈 때문에 피곤하다면,<br> 효율적으로 좋은 잠을 청할 방법을 알아보자!<br></div>
-			<p class="text-align-center">
-			1. 정해진 시간에 일어나고, 밤을 일찍 맞는다.<br>
-			2. 낮에 충분한 햇빛을 쬔다.<br>
-			3. 야간 운동은 절대 피한다.<br>
-			4. 무리하게 자려고 노력하지 않는다.<br>
-			5. 자기 전에 미리 생각을 정리한다.<br>
-			6. 잠들기 쉬운 몸을 만든다.<br>
-			<div class="a">
-			여기에서</div>
-
-			<p class="text-align-center">
-			<em>심리적으로 안정된 상태가 되는 것이 가장 바람직하고 근본적인 해결책!<br></em>
-			모두 자신만의 방법을 찾아 좋은 꿈 꾸러 가요. Good night!
-			</p>
-			<img class="size" src="img10.gif">
-			</p>
-		</div>
-
-	</section>
-
-	<footer class="bg-none">
-		<p class="text-align-left font-size">
-			<참고 자료><br>
-			https://pguin.tistory.com/1140 <br>
-			https://terms.naver.com/entry.nhn?docId=3580008&cid=58943&categoryId=58966<br>
-			https://terms.naver.com/entry.nhn?docId=1222553&cid=40942&categoryId=<br>
-			https://terms.naver.com/entry.nhn?docId=2718590&cid=55571&categoryId=55571<br>
-			http://www.healtip.co.kr/news/articleView.html?idxno=288<br>
-			https://nbamania.com/g2/bbs/board.php?bo_table=freetalk&wr_id=3246066<br>
-			https://www.flickr.com/photos/skyseeker/35157555392
-
-		</p>
-			
-		</p>
-	</footer>
-	<footer class="bg-none">
-		<p>한경대 디자인학과 2016286041 이겨례</p>
-	</footer>
-
+	
+	<footer class="text-center margin-bottom">
+	<p>한경대 디자인학과 2016286041 이겨례</p>	
+	</footer> 
+		
+	
 </body>
 </html>
